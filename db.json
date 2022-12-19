@@ -1,0 +1,87 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nom": "karoui",
+      "prenom": "yassine",
+      "dob": "1999-09-04",
+      "gsm": 26776863,
+      "role": "organisateur",
+      "email": "karouiiyassine@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456"
+    },
+    {
+      "id": 2,
+      "nom": "jemli",
+      "prenom": "arij",
+      "dob": "1999-10-04",
+      "gsm": 52190241,
+      "role": "client",
+      "email": "arijjemli@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456"
+    },
+    {
+      "id": 3,
+      "nom": "jlassi",
+      "prenom": "miniar",
+      "dob": "1999-12-04",
+      "gsm": 29378158,
+      "role": "organisateur",
+      "email": "jlassiminiar12@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456"
+    },
+    {
+      "id": 4,
+      "nom": "tayachi",
+      "prenom": "ghada",
+      "dob": "1999-08-04",
+      "gsm": 26776863,
+      "role": "client",
+      "email": "ghadatayachi99@gmail.com",
+      "password": "123456",
+      "confirmpassword": "123456"
+    },
+    {
+      "nom": "salah",
+      "prenom": "oussema",
+      "dob": "1999-07-04",
+      "gsm": 26776863,
+      "role": "organisateur",
+      "email": "oussemasalah01@gmail.com",
+      "id": 5,
+      "password": "123456",
+      "confirmpassword": "123456"
+    },
+    {
+      "nom": "azerty",
+      "dob": "2002-12-14",
+      "prenom": "azerty",
+      "role": "client",
+      "gsm": 57896874,
+      "email": "azerty@gmail.com",
+      "password": "azerty",
+      "confirmpassword": "azerty",
+      "id": 6
+    }
+  ],
+  "reservations": [
+    {   
+      "id": 1,
+      "nomPrenom": "karoui yassine",
+      "gsm" :26776863,
+      "dayOfReservation": "2022-12-14",
+      "email" :"karouiiyassine@gmail.com" 
+    },
+    {   
+      "id": 2,
+      "nomPrenom": "exapmle",
+      "gsm" :26776789,
+      "dayOfReservation": "2022-12-17",
+      "email" :"example@gmail.com"
+      
+    }
+  ]
+}

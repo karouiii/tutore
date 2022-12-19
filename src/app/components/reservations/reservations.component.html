@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button (click)="onGetAllReservations()" class="btn btn-outline-primary ml-2">Afficher les réservations</button>
+    </div>
+</nav>
+<ng-container class="container" *ngIf="reservations$">
+    <table class="table container">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom et Prénom</th>
+                <th>E-mail</th>
+                <th>Date de la réservation</th>
+                <th>Téléphone</th>
+            </tr>
+        </thead>
+        
+        <tr *ngFor="let r of reservations$ |async">
+            <td>{{r.id}}</td>
+            <td>{{r.nomPrenom}}</td>
+            <td>{{r.email}}</td>
+            <td>{{r.dayOfReservation}}</td>
+            <td>{{r.gsm}}</td>
+           <!-- 
+            <td>
+                <button class="btn btn-outline-primary" onclick="sendMail(r)">
+                    <i class="fa fa-envelope"></i>
+                </button>
+            </td>-->
+           
+            <td>
+                <button class="btn btn-outline-danger" (click)="onDelete(r)">
+                    <span class="fa fa-trash-o"></span>
+                </button>
+            </td>
+        </tr>
+    </table>
+</ng-container>
