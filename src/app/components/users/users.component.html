@@ -27,9 +27,10 @@
     </ul>-->
 </nav>
 <ng-container class="container" *ngIf="users$">
-    <table class="table container">
+    <div class="table-responsive">
+    <table class="table container table-hover">
         <thead>
-            <tr>
+            <tr class="table-active">
                 <th>ID</th>
                 <th>Nom</th>
                 <th>Prénom</th>
@@ -38,28 +39,32 @@
                 <th>Role</th>
                 <th>E-mail</th>
                 <th>Mot de passe</th>
+                <th></th>
+                <th></th>
             </tr>
         </thead>
-        
-        <tr *ngFor="let u of users$ |async">
-            <td>{{u.id}}</td>
-            <td>{{u.nom}}</td>
-            <td>{{u.prenom}}</td>
-            <td>{{u.dob}}</td>
-            <td>{{u.gsm}}</td>
-            <td>{{u.role}}</td>
-            <td>{{u.email}}</td>
-            <td>{{u.password}}</td>
-            <td>
-                <button class="btn btn-outline-danger" (click)="onDelete(u)">
-                    <span class="fa fa-trash-o"></span>
-                </button>
-            </td>
-            <td>
-            <button class="btn btn-outline-primary" (click)="onUpdate(u)">
-                <span class="fa fa-edit"></span>
-            </button>
-        </td>
-        </tr>
+        <tbody>
+            <tr *ngFor="let u of users$ |async">
+                <td>{{u.id}}</td>
+                <td>{{u.nom}}</td>
+                <td>{{u.prenom}}</td>
+                <td>{{u.dob}}</td>
+                <td>{{u.gsm}}</td>
+                <td>{{u.role}}</td>
+                <td>{{u.email}}</td>
+                <td>{{u.password}}</td>
+                <td>
+                    <button class="btn btn-outline-danger" (click)="onDelete(u)">
+                        <span class="fa fa-trash-o"></span>
+                    </button>
+                </td>
+                <td>
+                    <button class="btn btn-outline-primary" (click)="onUpdate(u)">
+                        <span class="fa fa-edit"></span>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
     </table>
+    </div>
 </ng-container>

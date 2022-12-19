@@ -54,34 +54,22 @@
       "id": 5,
       "password": "123456",
       "confirmpassword": "123456"
-    },
-    {
-      "nom": "azerty",
-      "dob": "2002-12-14",
-      "prenom": "azerty",
-      "role": "client",
-      "gsm": 57896874,
-      "email": "azerty@gmail.com",
-      "password": "azerty",
-      "confirmpassword": "azerty",
-      "id": 6
     }
   ],
   "reservations": [
-    {   
+    {
       "id": 1,
       "nomPrenom": "karoui yassine",
-      "gsm" :26776863,
+      "gsm": 26776863,
       "dayOfReservation": "2022-12-14",
-      "email" :"karouiiyassine@gmail.com" 
+      "email": "karouiiyassine@gmail.com"
     },
-    {   
+    {
       "id": 2,
       "nomPrenom": "exapmle",
-      "gsm" :26776789,
+      "gsm": 26776789,
       "dayOfReservation": "2022-12-17",
-      "email" :"example@gmail.com"
-      
+      "email": "example@gmail.com"
     }
   ]
 }

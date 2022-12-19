@@ -4,8 +4,8 @@
     </div>
 </nav>
 <ng-container class="container" *ngIf="reservations$">
-    <table class="table container">
-        <thead>
+    <table class="table container table-hover">
+        <thead class="thead-light">
             <tr>
                 <th>ID</th>
                 <th>Nom et Prénom</th>
@@ -14,7 +14,7 @@
                 <th>Téléphone</th>
             </tr>
         </thead>
-        
+        <tbody>
         <tr *ngFor="let r of reservations$ |async">
             <td>{{r.id}}</td>
             <td>{{r.nomPrenom}}</td>
@@ -34,5 +34,6 @@
                 </button>
             </td>
         </tr>
+        </tbody>
     </table>
 </ng-container>
